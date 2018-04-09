@@ -507,6 +507,7 @@ main(int argc, char **argv)
 					"PIGGY : Piggycoin : p\n"
 					"PINK : Pinkcoin : 2\n"
 					"PIVX : PIVX : D\n"
+					"LUX : LUX : L\n"
 					"PKB : Parkbyte : P\n"
 					"PND : Pandacoin : P\n"
 					"POT : Potcoin : P\n"
@@ -549,6 +550,14 @@ main(int argc, char **argv)
 					"Generating PIVX Address\n");
 					addrtype = 30;
 					privtype = 212;
+					break;
+			}
+			else
+			if (strcmp(optarg, "LUX")== 0) {
+				fprintf(stderr,
+					"Generating LUX Address\n");
+					addrtype = 48;
+					privtype = 155;
 					break;
 			}
 			else
